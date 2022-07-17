@@ -9,20 +9,20 @@
 
 from time import *
 
-def solve():
-    zahl = 0
-    zahl2 = 0
-    i = 0
+def solve(x):
+    m = 0
+    n = 0
+    i = 1
 
-    while i <= 100:
-        zahl += i * i
-        zahl2 = zahl2 + i
+    while i <= x:
+        m += i ** 2
+        n += i
         i += 1
 
-    print(zahl2 * zahl2 - zahl)
+    print(n ** 2 - m)
 
 t1 = time()
-solve()
+solve(100)
 t2 = time()
 
 print('Running for: ', round(t2 - t1, 4), 'sec')
