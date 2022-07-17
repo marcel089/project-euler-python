@@ -10,7 +10,7 @@
 from time import *
 
 def solve(min, max):
-	# Create an Array until with 
+	# Create an Array until max value 
 	i = 2
 	numberArray = [i for i in range(min, max + 1)]
 
