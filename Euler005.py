@@ -10,28 +10,26 @@
 from time import *
 
 def solve():
-    zahl = 1
+    n = 1
     while True:
-        if (zahl % 2 == 0 and
-            zahl % 3 == 0 and
-            zahl % 4 == 0 and
-            zahl % 5 == 0 and
-            zahl % 7 == 0 and
-            zahl % 8 == 0 and
-            zahl % 9 == 0 and
-            zahl % 11 == 0 and
-            zahl % 12 == 0 and
-            zahl % 13 == 0 and
-            zahl % 14 == 0 and
-            zahl % 16 == 0 and
-            zahl % 18 == 0 and
-            zahl % 17 == 0 and
-            zahl % 19 == 0):
+        if (n % 19 == 0):
+            if (n % 17 == 0):
+                if (n % 13 == 0):
+                    if (n % 11 == 0):
+                        if (n % 7 == 0):
+                            if (n % 5 == 0):
+                                if (n % 3 == 0):
+                                    if (    n %  2 == 0 and n %  4 == 0 
+                                        and n %  6 == 0 and n %  8 == 0
+                                        and n %  9 == 0 and n % 10 == 0
+                                        and n % 12 == 0 and n % 14 == 0
+                                        and n % 15 == 0 and n % 16 == 0
+                                        and n % 18 == 0 and n % 20 == 0):
+             
+                                        print(n)
+                                        break
 
-            print(zahl)
-            break
-
-        zahl += 1
+        n += 1
 
 
 t1 = time()
