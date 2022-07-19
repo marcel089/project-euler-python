@@ -7,7 +7,6 @@
 # python_version  : 3.10.5
 # ==============================================================================
 
-from math import prod
 from time import *
 from helper.readFile import readIntIntoList
 
